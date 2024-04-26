@@ -1,0 +1,66 @@
+@import url('https://fonts.google.com/specimen/Young+Serif');
+@import url('https://fonts.google.com/specimen/Outfit');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Young Serif',san-Serif;
+}
+
+body{
+    background-color:hsl(30, 54%, 90%);
+}
+
+.page{
+    display:grid;
+    place-items:Center;
+    margin-top:4rem;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-direction:column;
+    height:1000px;
+    width:400px;
+    background-color: hsl(0, 0%, 100%);
+    padding:25px;
+    border-radius:10px;
+}
+
+.container p{
+    font-size:9px;
+    padding:5px;
+}
+
+img{
+    height:150px;
+    width:350px;
+    border-radius:5px;
+}
+
+h2{
+    font-size:22px;
+    padding:10px;
+}
+
+.preparation{
+    background-color:hsl(330, 100%, 98%);
+    height:350px;
+    width:350px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.preparation h4{
+    padding:10px 0px 5px 20px;
+    font-weight:bold;
+    color:hsl(332, 51%, 32%);
+}
+
+.preparation ul{
+    padding-left:50px;
+}
