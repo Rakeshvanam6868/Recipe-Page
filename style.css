@@ -1,20 +1,18 @@
-@import url('https://fonts.google.com/specimen/Young+Serif');
-@import url('https://fonts.google.com/specimen/Outfit');
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Young Serif',san-Serif;
 }
 
 body{
     background-color:hsl(30, 54%, 90%);
+    font-family: 'Outfit', sans-serif;
 }
 
 .page{
     display:grid;
     place-items:Center;
-    margin-top:4rem;
+    margin:10rem;
 }
 
 .container{
@@ -27,22 +25,32 @@ body{
     background-color: hsl(0, 0%, 100%);
     padding:25px;
     border-radius:10px;
+    gap:10px;
 }
 
-.container p{
-    font-size:9px;
-    padding:5px;
+p{
+    font-size:12px;
+    color:hsl(30, 10%, 34%);
 }
 
 img{
+    margin-top:25px;
     height:150px;
     width:350px;
     border-radius:5px;
 }
 
 h2{
-    font-size:22px;
-    padding:10px;
+    font-family: 'Young Serif', serif;
+    font-weight: 700;
+    font-size:18px;
+}
+
+h3{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    font-size:16px;
+    color:hsl(14, 45%, 36%);
 }
 
 .preparation{
@@ -53,14 +61,85 @@ h2{
     justify-content:flex-start;
     flex-direction:column;
     align-items:flex-start;
+    border-radius:5px;
+    font-size:10px;
+    padding-bottom:10px;
 }
 
 .preparation h4{
     padding:10px 0px 5px 20px;
     font-weight:bold;
+    font-size:12px;
     color:hsl(332, 51%, 32%);
 }
 
 .preparation ul{
     padding-left:50px;
+}
+
+ul,ol{
+    padding-left:15px;
+    font-size:10px;
+    font-weight: 600;
+}
+
+li{
+    padding:3px;
+    color:hsl(30, 10%, 34%);
+}
+
+hr{
+    margin-top:10px 0px;
+    width:100%;
+    height:1px;
+    background:gray;
+}
+
+b{
+    font-weight:700;
+}
+
+table{
+    width:100%;
+}
+
+.pink{
+    color:hsl(332, 51%, 32%);
+    font-size:14px;
+    font-weight:400;
+}
+
+th,td{
+    padding:7px;
+    border-bottom:1px solid black;
+}
+
+td{
+    font-size:12px;
+}
+
+@media (max-width: 370px){
+    .page{
+        margin:0px;
+        padding:0px;
+        display:grid;
+        place-items:Center;
+     }
+
+    .container{
+        height:1100px;
+        width:300px;
+    }
+    
+    img{
+        margin-top:0px;
+        height:150px;
+        width:250px;
+        border-radius:5px;
+    }
+
+    .preparation{
+        height:250px;
+        width:250px;
+    }
 }
