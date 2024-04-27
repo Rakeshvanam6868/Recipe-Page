@@ -12,7 +12,7 @@ body{
 .page{
     display:grid;
     place-items:Center;
-    margin:10rem;
+    margin:10px;
 }
 
 .container{
@@ -20,7 +20,7 @@ body{
     justify-content:center;
     align-items:flex-start;
     flex-direction:column;
-    height:1000px;
+    height:1020px;
     width:400px;
     background-color: hsl(0, 0%, 100%);
     padding:25px;
@@ -118,17 +118,17 @@ td{
     font-size:12px;
 }
 
-@media (max-width: 370px){
+@media (min-width: 0px) and (max-width:370px){
     .page{
-        margin:0px;
-        padding:0px;
         display:grid;
-        place-items:Center;
-     }
-
+        place-items:center;
+    }
     .container{
         height:1100px;
         width:300px;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
     }
     
     img{
